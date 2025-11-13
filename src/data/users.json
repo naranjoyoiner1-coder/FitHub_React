@@ -1,0 +1,17 @@
+[
+  {
+    "email": "Thomas@fithub.com",
+    "password": "thomas",
+    "role": "admin"
+  },
+  {
+    "email": "Yoiner@fithub.com",
+    "password": "yoiner",
+    "role": "trainer"
+  },
+  {
+    "email": "Salome@fithub.com",
+    "password": "salome",
+    "role": "user"
+  }
+]

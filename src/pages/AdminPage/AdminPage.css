@@ -1,0 +1,9 @@
+@import "../UserPage/UserPage.css";
+
+.admin-header {
+  background-color: #000;
+}
+
+.dashboard-card .icon {
+  color: #3061ff;
+}

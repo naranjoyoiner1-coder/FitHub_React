@@ -1,0 +1,10 @@
+@import "../UserPage/UserPage.css";
+
+.trainer-header {
+  background-color: #1c1c1c;
+}
+
+.dashboard-card .icon {
+  color: #00c851;
+}
+

@@ -7,6 +7,10 @@ import LoginPage from "../pages/loginPage/LoginPage";
 import Couches from "../pages/coaches/Coaches";  
 import Plans from "../pages/plans/Plans";
 import Reviews from "../pages/reviews/Reviews";
+import AdminPage from "../pages/AdminPage/AdminPage";
+import TrainerPage from "../pages/TrainerPage/TrainerPage";
+import UserPage from "../pages/UserPage/UserPage";
+import Assistant from "../pages/assistant/Assistant";
 
 export let AppRouter = [
     {
@@ -44,6 +48,22 @@ export let AppRouter = [
     {
         path: '/reviews',
         element: <Reviews/>
+    },
+    { 
+        path: "/admin", 
+        element: <AdminPage /> 
+    },
+    { 
+        path: "/trainer", 
+        element: <TrainerPage /> 
+    },
+    { 
+        path: "/user", 
+        element: <UserPage /> 
+    },
+    {
+        path: '/assistant',
+        element: <Assistant />
     }
 
 ]
