@@ -37,10 +37,11 @@ function Register() {
   return (
     <div>
       <Header />
-      <form onSubmit={handleSubmit}>
+      <form className="register-form" onSubmit={handleSubmit}>
         <h2 className="tittle_register">CREAR CUENTA</h2>
 
         <input
+          className="register-input"
           name="nombre"
           value={form.nombre}
           onChange={handleChange}
@@ -50,6 +51,7 @@ function Register() {
         />
 
         <input
+          className="register-input"
           name="apellido"
           value={form.apellido}
           onChange={handleChange}
@@ -59,6 +61,7 @@ function Register() {
         />
 
         <input
+          className="register-input"
           name="fechaNacimiento"
           value={form.fechaNacimiento}
           onChange={handleChange}
@@ -67,8 +70,9 @@ function Register() {
           required
         />
 
-        <div style={{ display: "flex", gap: 5 }}>
+        <div className="document-group">
           <select
+            className="register-select"
             name="tipoDocumento"
             value={form.tipoDocumento}
             onChange={handleChange}
@@ -81,6 +85,7 @@ function Register() {
           </select>
 
           <input
+            className="register-input"
             name="numeroDocumento"
             value={form.numeroDocumento}
             onChange={handleChange}
@@ -91,6 +96,7 @@ function Register() {
         </div>
 
         <input
+          className="register-input"
           name="telefono"
           value={form.telefono}
           onChange={handleChange}
@@ -99,7 +105,7 @@ function Register() {
           required
         />
 
-        <select name="ciudad" value={form.ciudad} onChange={handleChange} required>
+        <select className="register-select" name="ciudad" value={form.ciudad} onChange={handleChange} required>
           <option value="">CIUDAD</option>
           <option value="Bogotá">Bogotá</option>
           <option value="Medellín">Medellín</option>
@@ -107,6 +113,7 @@ function Register() {
         </select>
 
         <input
+          className="register-input"
           name="direccion"
           value={form.direccion}
           onChange={handleChange}
@@ -116,6 +123,7 @@ function Register() {
         />
 
         <input
+          className="register-input"
           name="correo"
           value={form.correo}
           onChange={handleChange}
@@ -125,6 +133,7 @@ function Register() {
         />
 
         <input
+          className="register-input"
           name="contrasena"
           value={form.contrasena}
           onChange={handleChange}
@@ -145,7 +154,7 @@ function Register() {
             />
             <span>
               Al seleccionar esta casilla acepto los{" "}
-              <a href="#">términos y condiciones</a> y{" "}
+              <a href="/terms">términos y condiciones</a> y{" "}
               <a href="#">políticas de tratamiento de datos</a>.
             </span>
           </label>

@@ -11,6 +11,7 @@ import AdminPage from "../pages/AdminPage/AdminPage";
 import TrainerPage from "../pages/TrainerPage/TrainerPage";
 import UserPage from "../pages/UserPage/UserPage";
 import Assistant from "../pages/assistant/Assistant";
+import Terms from "../pages/terms/Terms";
 
 export let AppRouter = [
     {
@@ -64,6 +65,11 @@ export let AppRouter = [
     {
         path: '/assistant',
         element: <Assistant />
+    },
+
+    {
+        path: '/terms',
+        element: <Terms/>
     }
 
 ]

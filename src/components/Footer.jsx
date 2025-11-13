@@ -37,12 +37,12 @@ function Footer() {
 
       {/* Aquí agregamos los links típicos de footer */}
       <nav className="footer-links" aria-label="Enlaces de navegación del pie de página">
-        <a href="#">Quiénes somos</a>
-        <a href="#">Promociones</a>
-        <a href="#">Planes</a>
+        <a href="/us">Quiénes somos</a>
+        <a href="/promociones">Promociones</a>
+        <a href="/plans">Planes</a>
         <a href="#">Contacto</a>
         <a href="#">Preguntas frecuentes</a>
-        <a href="#">Términos y condiciones</a>
+        <a href="/terms">Términos y condiciones</a>
         <a href="#">Contáctenos (PQRS)</a>
         <a href="#">Acceso a Proveedores</a>
         <a href="#">Políticas corporativas</a>
