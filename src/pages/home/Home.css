@@ -94,6 +94,9 @@
   flex-wrap: wrap;
 }
 
+
+
+
 /* Tarjeta general de planes */
 .home-plan {
   background: #fff;
@@ -425,3 +428,179 @@
     transform: translate(-50%, -50%) scale(1.05);
   }
 }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////---CARDS---//////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* === CONTENEDOR GENERAL === */
+.cards-contect {
+  position: relative;
+  width: 820px;
+  height: 420px;
+  margin: 50px auto;
+  perspective: 1000px;
+  background: none;
+}
+
+/* === CARA FRONTAL === */
+.cards-contect-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: white;
+  border: 2px solid #3061ff;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 3.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.85; /* puedes ajustar la visibilidad */
+}
+
+
+.cards-contect-front h1 {
+  font-weight: 600;
+  position: absolute;
+  bottom: 55px;
+  left: 50px;
+  color: white;
+  transform-style: preserve-3d;
+  transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 8;
+  font-size: 3em;
+  transform: translateZ(0px);
+}
+
+.cards-contect-front .price {
+  font-weight: 200;
+  position: absolute;
+  top: 55px;
+  right: 50px;
+  color: white;
+  transform-style: preserve-3d;
+  transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 4;
+  font-size: 2em;
+  transform: translateZ(0px);
+}
+
+/* Efecto 3D del título */
+.cards-contect {
+  perspective: 1000px;
+}
+
+.cards-contect-front h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  transform: translateZ(60px);
+  transition: transform 2.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.cards-contect:hover h1 {
+  transform: translateZ(90px) rotateY(10deg);
+}
+
+/* === CARA TRASERA === */
+.cards-contect-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: #000;
+  border-radius: 15px;
+  border: 2px solid #000;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: transform 3.5s cubic-bezier(0.19, 1, 0.22, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+/* === TEXTO DEL REVERSO === */
+.cards-contect-info {
+  text-align: center;
+}
+
+.cards-contect-info h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cards-contect-info h3 span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #3061ff;
+}
+
+.cards-contect-info p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* === EFECTO DE GIRO === */
+.cards-contect:hover .cards-contect-front {
+  transform: rotateY(180deg);
+}
+.cards-contect:hover .cards-contect-back {
+  transform: rotateY(360deg);
+}
+
+/* === BOTÓN PREMIUM === */
+.buttonPlan {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: 2px solid #3061ff;
+  background: #3061ff;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.buttonPlan:hover {
+  background: #284fce;
+  color: white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .cards-contect {
+    width: 90%;
+    height: 400px;
+  }
+  .cards-contect-front h1 {
+    font-size: 2rem;
+  }
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////---END CARDS---////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
