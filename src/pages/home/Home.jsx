@@ -54,15 +54,27 @@ function Home() {
   <h1 className="home-title">Elegir Planes y <span className="home-diferent">Entra ¡YA!</span></h1>
 
   
-    <section className="contenedor-caja-home">
-  <article className="home-plan">
-    <h3>Planes de Entrenamiento</h3>
-    <p>Descubre nuestros planes diseñados para adaptarse a tus metas fitness.</p>
-    <p>Desde acceso básico a todas las sedes hasta experiencias exclusivas con beneficios premium.</p>
-    <p>Elige el plan que mejor se ajuste a tu estilo de vida y alcanza tus objetivos con nosotros.</p>
-    <button className="buttonPlan" onClick={goToPlans}>¡Ver Más!</button>
-  </article>
+<section className="cards-contect">
+  <div className="cards-contect">
+    {/* Lado frontal */}
+    <div className="cards-contect-front">
+      <img src="/src/assets/IMG/imagen-editada.jpg" alt="Plan Fitness" className="card-bg" />
+      <h1>Plan Fitness</h1>
+    </div>
+
+    {/* Lado trasero */}
+    <div className="cards-contect-back">
+      <div className="cards-contect-info">
+        <h3>Planes de  <span> Entrenamiento </span> </h3>
+        <p>•Descubre nuestros planes diseñados para adaptarse a tus metas fitness.</p>
+        <p>•Desde acceso básico a todas las sedes hasta experiencias exclusivas con beneficios premium.</p>
+        <p>•Elige el plan que mejor se ajuste a tu estilo de vida y alcanza tus objetivos con nosotros.</p>
+        <a href="#" className="buttonPlan" onClick={goToPlans}>¡Ver Más!</a>
+      </div>
+    </div>
+  </div>
 </section>
+
 
     <h1 className="home-title">Activa <span className="home-diferent">tu mejor versión</span></h1>
 
