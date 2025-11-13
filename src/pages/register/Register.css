@@ -1,57 +1,91 @@
-        form {
-          margin-top: 100px;
-          margin-bottom: 100px;
-          display: inline-block;
-          margin-left: 550px;
-            width: 500px;
-        }
-        .tittle_register {
-            font-size: 18px;
-            font-weight: 500;
-            margin-bottom: 20px;
-        }
-        input, select {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        label {
-            font-size: 12px;
-        }
-        .pr {
-            background-color: #3061ff;
-            color: rgb(0, 0, 0);
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            width: 100%;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .pr:hover {
-            background-color: #284fce;
-            color: white;
-        }
-        .terms {
-            font-size: 8px;
-            margin-top: 10px;
-            
-        }
-        .terms a {
-            color: #ff6600;
-        }
-        .terms label {
-            margin-left:20px;
-            font-weight: 100;
-            font-size: 15px;
-            color: #444;
-            display: flex;
-            input {
-              width: 20px;
-              margin-right: 10px;
-            }
-        }
+        .register-form {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.tittle_register {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.register-input,
+.register-select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.register-input:focus,
+.register-select:focus {
+  outline: none;
+  border-color: #3061ff;
+  box-shadow: 0 0 5px rgba(48, 97, 255, 0.3);
+}
+
+.document-group {
+  display: flex;
+  gap: 5px;
+}
+
+.document-group .register-select,
+.document-group .register-input {
+  flex: 1;
+}
+
+.pr {
+  background-color: #3061ff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.pr:hover {
+  background-color: #284fce;
+}
+
+.terms {
+  margin-top: 10px;
+}
+
+.terms label {
+  margin-left: 20px;
+  font-weight: 100;
+  font-size: 15px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.terms label input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.terms a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}

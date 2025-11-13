@@ -7,6 +7,7 @@ import LoginPage from "../pages/loginPage/LoginPage";
 import Couches from "../pages/coaches/Coaches";  
 import Plans from "../pages/plans/Plans";
 import Reviews from "../pages/reviews/Reviews";
+import Terms from "../pages/terms/Terms";
 
 export let AppRouter = [
     {
@@ -44,6 +45,10 @@ export let AppRouter = [
     {
         path: '/reviews',
         element: <Reviews/>
+    },
+    {
+        path: '/terms',
+        element: <Terms/>
     }
 
 ]
